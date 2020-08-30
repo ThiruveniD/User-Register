@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <br />
+   
+    <div class="form-group row ">
+        
+        <div class="col-md-8 offset-2">
+            <button type="button" class="btn btn-md btn-primary" (click)="clickBackButton()">Back</button>
+            <div class="text-center header">User Details</div>
+<div class="card">
+    <div class="card-body">
+        
+               <div  *ngIf="UserDetails">
+                                  <div class="form-group row">
+                    <label class="col-md-2">
+                        First Name 
+                    </label>
+                    <div class="col-md-4">
+                        {{UserDetails?.FirstName}}
+                    </div>
+                    <label class="col-md-2">
+                        Last Name 
+                    </label>
+                    <div class="col-md-4">
+                        {{UserDetails?.LastName}}
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2">
+                        Email Id 
+                    </label>
+                    <div class="col-md-4">
+                        {{UserDetails?.EmailId}}
+                    </div>
+                    <label class="col-md-2">
+                      Mobile No 
+                    </label>
+                    <div class="col-md-4">
+                        {{UserDetails?.MobileNo}}
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2">Gender </label>
+                    <div class="col-md-4">                   
+                        {{UserDetails?.Gender}}
+                    </div>
+                                      <label class="col-md-2">Address </label>
+                    <div class="col-md-4">
+                        {{UserDetails?.Address}}
+                    </div>
+                </div>
+                          </div>                                   
+            </div>
+</div>
+        </div>
+    </div>
+    </div>
